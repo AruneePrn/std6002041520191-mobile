@@ -21,7 +21,7 @@ const styles = {
         backgroundColor: '#F5DA81'
     },
     text: {
-        fontSize: 40,
+        fontSize: 30,
         color:'#8A4B08'
     }  
 };

@@ -8,7 +8,6 @@ class App extends React.Component {
     return (
       <View >
         <Header title={"Albums"}></Header>
-        <Text>Momay It's Me.</Text>
         <Card />
       </View>
     );
