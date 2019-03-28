@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
 import Header from './Header';
+import Card from './Card';
 
-export default class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <View >
-        <Header title="Albums" />
-        <Text>MoMay</Text>
+        <Header title={"Albums"}></Header>
+        <Text>Momay It's Me.</Text>
+        <Card />
       </View>
     );
   }
 }
+
+export default App;
