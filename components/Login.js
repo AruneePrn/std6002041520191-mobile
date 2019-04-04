@@ -22,8 +22,8 @@ class Login extends Component {
         console.log(this.state)
         const url = 'http://128.199.240.120:9999/api/auth/login'
         axios.post(url, this.state)
-            .then(Response => {
-                console.log('token' , response.data.date.token)
+            .then(response => {
+                console.log('token' , response.data.data.token)
             })
     }
     render (){
