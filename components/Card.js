@@ -35,7 +35,7 @@ class Card extends Component {
                     <View style={styles.button}>
                         <Button
                             style={{width: 300, height:20,backgroundColor: 'red' }}
-                            title="Buy"
+                            title="buy"
                         />
                     </View>
                     

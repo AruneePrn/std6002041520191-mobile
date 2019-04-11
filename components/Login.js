@@ -3,12 +3,19 @@ import { View, Text, TextInput, Button } from 'react-native';
 import axios from 'axios';
 
 class Login extends Component {
+    static navigationOptions = {
+        title: 'Login'
+    }
     constructor(){
         super()
         this.state={
             email: '',
             password: ''
         }
+    }
+    componentDidMount(){
+        const {navigate} = this.props.navigation;
+        return navigate('Profile')
     }
     onChangeEmail(e){
         console.log('onChangeEmail', e)
@@ -27,6 +34,8 @@ class Login extends Component {
             })
     }
     render (){
+        const {navigate} = this.props.navigation;
+        return navigate('Profile')
         return (
         <View>
                 <TextInput
